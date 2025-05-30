@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver's License Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Edit Permanent Resident Card</h1>
+    <div>
+        <canvas id="canvas" width="600" height="400"></canvas>
+    </div>
+    <div>
+        <h2>Edit Fields</h2>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" placeholder="Enter Surname"><br>
+        <label for="given_name">Given Name:</label>
+        <input type="text" id="given_name" placeholder="Enter Given Name"><br>
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="text" id="date_of_birth" placeholder="DD MMM YYYY"><br>
+        <label for="photo">Upload New Photo:</label>
+        <input type="file" id="photo" accept="image/*"><br>
+        <button onclick="updateCard()">Update Card</button>
+        <button onclick="downloadCard()">Download Card</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
